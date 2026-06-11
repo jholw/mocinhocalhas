@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceCard from '../components/ServiceCard.tsx';
+---
+
+<Layout title="Mocinho Calhas CG">
+  <main class="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-16 px-4 py-8 text-slate-900 md:px-8 lg:px-12">
+    <section class="grid items-center gap-10 rounded-3xl bg-white p-8 shadow-[0_18px_50px_-18px_rgba(15,23,42,0.25)] md:grid-cols-[1.15fr_0.85fr] md:p-12">
+      <div class="space-y-6">
+        <span class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-700">Calhas • Instalação • Manutenção</span>
+        <h1 class="max-w-xl text-4xl font-black tracking-tight text-slate-900 md:text-5xl">Proteção e acabamento para sua cobertura, com atendimento rápido e profissional.</h1>
+        <p class="max-w-xl text-lg text-slate-600">Criamos uma landing page comercial para apresentar serviços, destacar diferenciais e facilitar o contato por WhatsApp para orçamento.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer" class="rounded-full bg-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-600/20 transition hover:bg-emerald-700">Solicitar orçamento</a>
+          <a href="#servicos" class="rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50">Ver serviços</a>
+        </div>
+      </div>
+      <aside class="rounded-3xl bg-slate-900 p-6 text-white shadow-2xl">
+        <p class="text-sm uppercase tracking-[0.35em] text-amber-200">Atendimento</p>
+        <h2 class="mt-3 text-2xl font-semibold">Por que escolher a Mocinho Calhas?</h2>
+        <ul class="mt-6 space-y-4 text-sm text-slate-200">
+          <li>• Instalação com acabamento profissional</li>
+          <li>• Materiais resistentes à chuva e sol</li>
+          <li>• Atendimento ágil para orçamento e manutenção</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="servicos" class="space-y-6">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="text-sm uppercase tracking-[0.35em] text-amber-700">Serviços</p>
+          <h2 class="text-2xl font-bold text-slate-900 md:text-3xl">Principais soluções para sua cobertura</h2>
+        </div>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <ServiceCard title="Instalação de calhas" description="Montagem profissional com medição, fixação e acabamento para proteção da sua residência ou comércio." />
+        <ServiceCard title="Manutenção e limpeza" description="Limpeza, revisão e reparos para garantir bom escoamento e evitar vazamentos." />
+        <ServiceCard title="Orçamento rápido" description="Atendimento direto por WhatsApp para tirar dúvidas e montar uma proposta personalizada." />
+      </div>
+    </section>
+  </main>
+</Layout>
